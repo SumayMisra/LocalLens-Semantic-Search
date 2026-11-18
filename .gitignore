@@ -1,0 +1,34 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+imports/
+.legacy-browser/
+node_modules/
+dist/
+
+# Environment variables and secrets
+.env
+.env.*
+*.pem
+*.key
+secrets.json
+credentials.json
+
+# OS and editor metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local databases and logs
+*.sqlite
+*.db
+*.log
+
+# Personal notes or scratchpads
+notes/
+private/
+TODO.md

@@ -1,0 +1,128 @@
+[
+  {
+    "id": "garden-water",
+    "title": "Rooftop garden handbook",
+    "heading": "Water before the heat",
+    "text": "Water the rooftop beds at dawn. Early watering gives roots time to absorb moisture before the afternoon heat. Push a finger into the soil; if it is still damp, wait another day.",
+    "imported": false
+  },
+  {
+    "id": "garden-compost",
+    "title": "Rooftop garden handbook",
+    "heading": "A balanced compost bin",
+    "text": "Mix dry leaves and shredded cardboard with vegetable scraps in the compost bin. Avoid meat and dairy because they attract pests. Turn the pile weekly to let air reach the center.",
+    "imported": false
+  },
+  {
+    "id": "garden-tools",
+    "title": "Rooftop garden handbook",
+    "heading": "Borrowing tools",
+    "text": "Shared garden tools live in the green cabinet beside the stairs. Sign out each item in the paper ledger and return it clean before sunset. Report broken handles to the volunteer coordinator.",
+    "imported": false
+  },
+  {
+    "id": "studio-quiet",
+    "title": "Harbor studio guide",
+    "heading": "Quiet working hours",
+    "text": "The studio keeps quiet hours from nine until noon. During this period, take phone calls in the courtyard and use headphones for audio. The afternoon is reserved for group work and conversation.",
+    "imported": false
+  },
+  {
+    "id": "studio-access",
+    "title": "Harbor studio guide",
+    "heading": "Step-free entrance",
+    "text": "Visitors who cannot use stairs can enter through the east courtyard. A gently sloped ramp leads to the wide side door. Press the blue bell if the entrance is locked.",
+    "imported": false
+  },
+  {
+    "id": "studio-booking",
+    "title": "Harbor studio guide",
+    "heading": "Reserve a meeting room",
+    "text": "Reserve a meeting room on the shared calendar at least one day ahead. Each booking may last up to two hours. Cancel unused reservations so other members can use the space.",
+    "imported": false
+  },
+  {
+    "id": "bike-flat",
+    "title": "Neighborhood bicycle notes",
+    "heading": "Repair a flat tire",
+    "text": "For a flat tire, remove the wheel and lift one edge of the tire with a plastic lever. Patch or replace the punctured inner tube, check for sharp debris, and inflate to the pressure printed on the tire.",
+    "imported": false
+  },
+  {
+    "id": "bike-night",
+    "title": "Neighborhood bicycle notes",
+    "heading": "Visible after dark",
+    "text": "When cycling after dark, use a white front light and a red rear light. Reflective ankle bands help drivers notice moving legs. Check the batteries before leaving home.",
+    "imported": false
+  },
+  {
+    "id": "bike-brakes",
+    "title": "Neighborhood bicycle notes",
+    "heading": "Brake inspection",
+    "text": "Squeeze both brake levers before every ride. If a lever touches the handlebar, the cable may need adjustment. Worn brake pads should be replaced before riding on steep streets.",
+    "imported": false
+  },
+  {
+    "id": "library-loan",
+    "title": "Little library policy",
+    "heading": "Borrowing period",
+    "text": "Library members may borrow three books for fourteen days. Renew a loan once if nobody is waiting for the title. Return books through the slot next to the front door when the desk is closed.",
+    "imported": false
+  },
+  {
+    "id": "library-damage",
+    "title": "Little library policy",
+    "heading": "Wet books",
+    "text": "If a borrowed book gets wet, do not place it on a heater. Stand it upright with the pages gently separated and contact the librarian. Quick reporting helps prevent mold and further damage.",
+    "imported": false
+  },
+  {
+    "id": "library-events",
+    "title": "Little library policy",
+    "heading": "Saturday storytelling",
+    "text": "Storytelling takes place every Saturday at ten in the reading corner. Families can attend without registering. Children must be accompanied by an adult; cushions are available beside the shelves.",
+    "imported": false
+  },
+  {
+    "id": "trip-delay",
+    "title": "Field trip plan",
+    "heading": "Rain changes",
+    "text": "If heavy rain is forecast, the river walk will move to the indoor nature center. The departure time stays the same. The organizer will send the revised destination to participants the evening before.",
+    "imported": false
+  },
+  {
+    "id": "trip-food",
+    "title": "Field trip plan",
+    "heading": "Lunch and drinking water",
+    "text": "Bring a packed lunch and a refillable water bottle on the field trip. There are no food stalls along the trail. A drinking fountain is available at the visitor center near the starting point.",
+    "imported": false
+  },
+  {
+    "id": "trip-meet",
+    "title": "Field trip plan",
+    "heading": "Meeting point",
+    "text": "Meet at the north gate of the botanical park at eight thirty. The group will leave at eight forty-five. Late arrivals should call the organizer instead of trying to catch up on an unfamiliar trail.",
+    "imported": false
+  },
+  {
+    "id": "repair-power",
+    "title": "Repair café notes",
+    "heading": "Electrical safety",
+    "text": "Unplug appliances before inspecting them at the repair café. Volunteers do not open microwave ovens or repair swollen batteries. These items must go to a qualified specialist.",
+    "imported": false
+  },
+  {
+    "id": "repair-cloth",
+    "title": "Repair café notes",
+    "heading": "Mending clothes",
+    "text": "Bring clean clothing and any matching buttons to the sewing table. Volunteers can teach visitors to mend a torn seam or patch a small hole. Fabric scraps and basic thread are provided.",
+    "imported": false
+  },
+  {
+    "id": "repair-donate",
+    "title": "Repair café notes",
+    "heading": "Donating spare parts",
+    "text": "Label donated spare parts with the device name and condition. Put working cables in the clear box and damaged cables in the recycling tray. Donations are sorted at the end of each session.",
+    "imported": false
+  }
+]

@@ -1,0 +1,409 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "backend": "Sentence Transformers / PyTorch CPU float32",
+  "python": "3.14.6",
+  "platform": "Darwin",
+  "architecture": "arm64",
+  "versions": {
+    "sentence-transformers": "6.3.0",
+    "torch": "2.15.0",
+    "transformers": "5.23.0",
+    "numpy": "2.5.5"
+  },
+  "corpus_sha256": "0dee2e96b65ca5bf2f8bf02b483877304dede36cf73bdc21dec7e8d33ff9db8a",
+  "queries_sha256": "9544881e1dc3fba613ca28187d0a7761155f6bcec7657ad5e0dbbb283dde5815",
+  "passages": 18,
+  "semantic_cutoff": 0.35,
+  "keyword_method": "BM25 with fixed English stop words",
+  "groups": {
+    "exact": {
+      "queries": 6,
+      "semantic_recall": 1.0,
+      "keyword_recall": 1.0
+    },
+    "paraphrase": {
+      "queries": 6,
+      "semantic_recall": 1.0,
+      "keyword_recall": 0.0
+    },
+    "all": {
+      "queries": 12,
+      "semantic_recall": 1.0,
+      "keyword_recall": 0.5
+    }
+  },
+  "quality": {
+    "semantic": {
+      "returned": 15,
+      "labeled_relevant": 12,
+      "precision_among_returned": 0.8,
+      "rank_1_hits": 12,
+      "no_answer_abstentions": 7,
+      "no_answer_queries": 8
+    },
+    "keyword": {
+      "returned": 10,
+      "labeled_relevant": 6,
+      "precision_among_returned": 0.6,
+      "rank_1_hits": 6,
+      "no_answer_abstentions": 6,
+      "no_answer_queries": 8
+    }
+  },
+  "rows": [
+    {
+      "id": "q01",
+      "kind": "exact",
+      "text": "compost vegetable scraps",
+      "relevant": [
+        "garden-compost"
+      ],
+      "semantic": [
+        "garden-compost"
+      ],
+      "keyword": [
+        "garden-compost",
+        "repair-cloth"
+      ],
+      "semantic_recall": 1.0,
+      "keyword_recall": 1.0,
+      "semantic_scores": [
+        0.6705443859100342
+      ],
+      "keyword_scores": [
+        6.773131139284356,
+        1.975846430026868
+      ]
+    },
+    {
+      "id": "q02",
+      "kind": "exact",
+      "text": "quiet hours",
+      "relevant": [
+        "studio-quiet"
+      ],
+      "semantic": [
+        "studio-quiet"
+      ],
+      "keyword": [
+        "studio-quiet",
+        "studio-booking"
+      ],
+      "semantic_recall": 1.0,
+      "keyword_recall": 1.0,
+      "semantic_scores": [
+        0.6390684843063354
+      ],
+      "keyword_scores": [
+        4.549916551558952,
+        2.067234616083786
+      ]
+    },
+    {
+      "id": "q03",
+      "kind": "exact",
+      "text": "flat tire inner tube",
+      "relevant": [
+        "bike-flat"
+      ],
+      "semantic": [
+        "bike-flat"
+      ],
+      "keyword": [
+        "bike-flat"
+      ],
+      "semantic_recall": 1.0,
+      "keyword_recall": 1.0,
+      "semantic_scores": [
+        0.5934597849845886
+      ],
+      "keyword_scores": [
+        11.379147381736823
+      ]
+    },
+    {
+      "id": "q04",
+      "kind": "exact",
+      "text": "borrow books fourteen days",
+      "relevant": [
+        "library-loan"
+      ],
+      "semantic": [
+        "library-loan",
+        "library-damage",
+        "library-events"
+      ],
+      "keyword": [
+        "library-loan"
+      ],
+      "semantic_recall": 1.0,
+      "keyword_recall": 1.0,
+      "semantic_scores": [
+        0.7048608660697937,
+        0.361442506313324,
+        0.35447800159454346
+      ],
+      "keyword_scores": [
+        10.980295117668032
+      ]
+    },
+    {
+      "id": "q05",
+      "kind": "exact",
+      "text": "field trip lunch water",
+      "relevant": [
+        "trip-food"
+      ],
+      "semantic": [
+        "trip-food"
+      ],
+      "keyword": [
+        "trip-food",
+        "garden-water"
+      ],
+      "semantic_recall": 1.0,
+      "keyword_recall": 1.0,
+      "semantic_scores": [
+        0.6170881986618042
+      ],
+      "keyword_scores": [
+        9.396343130541027,
+        2.0205076720617994
+      ]
+    },
+    {
+      "id": "q06",
+      "kind": "exact",
+      "text": "donated spare parts cables",
+      "relevant": [
+        "repair-donate"
+      ],
+      "semantic": [
+        "repair-donate"
+      ],
+      "keyword": [
+        "repair-donate"
+      ],
+      "semantic_recall": 1.0,
+      "keyword_recall": 1.0,
+      "semantic_scores": [
+        0.7734548449516296
+      ],
+      "keyword_scores": [
+        11.205561456281758
+      ]
+    },
+    {
+      "id": "q07",
+      "kind": "paraphrase",
+      "text": "How can someone in a wheelchair get inside the workspace?",
+      "relevant": [
+        "studio-access"
+      ],
+      "semantic": [
+        "studio-access"
+      ],
+      "keyword": [],
+      "semantic_recall": 1.0,
+      "keyword_recall": 0.0,
+      "semantic_scores": [
+        0.4028022289276123
+      ],
+      "keyword_scores": []
+    },
+    {
+      "id": "q08",
+      "kind": "paraphrase",
+      "text": "What should I wear or switch on so motorists can see me at night?",
+      "relevant": [
+        "bike-night"
+      ],
+      "semantic": [
+        "bike-night"
+      ],
+      "keyword": [],
+      "semantic_recall": 1.0,
+      "keyword_recall": 0.0,
+      "semantic_scores": [
+        0.5509214401245117
+      ],
+      "keyword_scores": []
+    },
+    {
+      "id": "q09",
+      "kind": "paraphrase",
+      "text": "I spilled a drink on a novel I checked out. What now?",
+      "relevant": [
+        "library-damage"
+      ],
+      "semantic": [
+        "library-damage"
+      ],
+      "keyword": [],
+      "semantic_recall": 1.0,
+      "keyword_recall": 0.0,
+      "semantic_scores": [
+        0.4320671856403351
+      ],
+      "keyword_scores": []
+    },
+    {
+      "id": "q10",
+      "kind": "paraphrase",
+      "text": "Will bad weather change where our outdoor excursion goes?",
+      "relevant": [
+        "trip-delay"
+      ],
+      "semantic": [
+        "trip-delay"
+      ],
+      "keyword": [],
+      "semantic_recall": 1.0,
+      "keyword_recall": 0.0,
+      "semantic_scores": [
+        0.47669950127601624
+      ],
+      "keyword_scores": []
+    },
+    {
+      "id": "q11",
+      "kind": "paraphrase",
+      "text": "Can somebody help stitch up my ripped shirt?",
+      "relevant": [
+        "repair-cloth"
+      ],
+      "semantic": [
+        "repair-cloth"
+      ],
+      "keyword": [],
+      "semantic_recall": 1.0,
+      "keyword_recall": 0.0,
+      "semantic_scores": [
+        0.38169997930526733
+      ],
+      "keyword_scores": []
+    },
+    {
+      "id": "q12",
+      "kind": "paraphrase",
+      "text": "When should I give the plants a drink to avoid evaporation?",
+      "relevant": [
+        "garden-water"
+      ],
+      "semantic": [
+        "garden-water",
+        "trip-food"
+      ],
+      "keyword": [
+        "garden-compost"
+      ],
+      "semantic_recall": 1.0,
+      "keyword_recall": 0.0,
+      "semantic_scores": [
+        0.45927509665489197,
+        0.38461101055145264
+      ],
+      "keyword_scores": [
+        2.4200071338080487
+      ]
+    }
+  ],
+  "no_answer_rows": [
+    {
+      "id": "n01",
+      "text": "How do I reset my password?",
+      "kind": "unrelated",
+      "relevant": [],
+      "semantic": [],
+      "keyword": [],
+      "semantic_abstained": true,
+      "keyword_abstained": true
+    },
+    {
+      "id": "n02",
+      "text": "Who won the football match yesterday?",
+      "kind": "unrelated",
+      "relevant": [],
+      "semantic": [],
+      "keyword": [],
+      "semantic_abstained": true,
+      "keyword_abstained": true
+    },
+    {
+      "id": "n03",
+      "text": "How do I calculate a matrix determinant?",
+      "kind": "unrelated",
+      "relevant": [],
+      "semantic": [],
+      "keyword": [],
+      "semantic_abstained": true,
+      "keyword_abstained": true
+    },
+    {
+      "id": "n04",
+      "text": "What ingredients do I need for a chocolate cake?",
+      "kind": "unrelated",
+      "relevant": [],
+      "semantic": [],
+      "keyword": [],
+      "semantic_abstained": true,
+      "keyword_abstained": true
+    },
+    {
+      "id": "n05",
+      "text": "What is the capital of Argentina?",
+      "kind": "unrelated",
+      "relevant": [],
+      "semantic": [],
+      "keyword": [],
+      "semantic_abstained": true,
+      "keyword_abstained": true
+    },
+    {
+      "id": "n06",
+      "text": "How do I configure a wireless router?",
+      "kind": "unrelated",
+      "relevant": [],
+      "semantic": [],
+      "keyword": [],
+      "semantic_abstained": true,
+      "keyword_abstained": true
+    },
+    {
+      "id": "n07",
+      "text": "What is the studio Wi-Fi password?",
+      "kind": "related-topic-missing-fact",
+      "relevant": [],
+      "semantic": [],
+      "keyword": [
+        {
+          "id": "studio-quiet",
+          "score": 2.5294088794971525
+        }
+      ],
+      "semantic_abstained": true,
+      "keyword_abstained": false
+    },
+    {
+      "id": "n08",
+      "text": "How much does a library membership cost?",
+      "kind": "related-topic-missing-fact",
+      "relevant": [],
+      "semantic": [
+        {
+          "id": "library-loan",
+          "score": 0.3873514235019684
+        }
+      ],
+      "keyword": [
+        {
+          "id": "library-loan",
+          "score": 2.4734989001713865
+        }
+      ],
+      "semantic_abstained": false,
+      "keyword_abstained": false
+    }
+  ]
+}

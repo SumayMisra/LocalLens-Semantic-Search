@@ -1,0 +1,19 @@
+{
+  "automated_tests": 25,
+  "automated_tests_passed": 25,
+  "model_backend": "Sentence Transformers / PyTorch CPU float32",
+  "real_model_flask_integration": "passed",
+  "gunicorn_http_smoke": "passed",
+  "javascript_syntax": "passed",
+  "pip_check": "passed",
+  "browser_ui": "Updated page loaded and accessible text inspected in Chrome; interaction commands timed out/interrupted, full UI QA unverified",
+  "docker_build": "unverified: Docker daemon unavailable",
+  "live_deployment": "not performed",
+  "observed_mac_rss_mib_after_smoke": 528.2,
+  "memory_note": "Single post-search RSS measurement, not a peak or Linux host guarantee",
+  "search_quality_regressions": "See search-regressions.json; real model over Gunicorn HTTP",
+  "semantic_no_answer_abstentions": "7/8; related-topic missing-fact false positive remains",
+  "keyword_no_answer_abstentions": "6/8",
+  "semantic_cutoff": 0.35,
+  "keyword_method": "BM25 with fixed English stop words"
+}

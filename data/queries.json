@@ -1,0 +1,98 @@
+[
+  {
+    "id": "q01",
+    "kind": "exact",
+    "text": "compost vegetable scraps",
+    "relevant": [
+      "garden-compost"
+    ]
+  },
+  {
+    "id": "q02",
+    "kind": "exact",
+    "text": "quiet hours",
+    "relevant": [
+      "studio-quiet"
+    ]
+  },
+  {
+    "id": "q03",
+    "kind": "exact",
+    "text": "flat tire inner tube",
+    "relevant": [
+      "bike-flat"
+    ]
+  },
+  {
+    "id": "q04",
+    "kind": "exact",
+    "text": "borrow books fourteen days",
+    "relevant": [
+      "library-loan"
+    ]
+  },
+  {
+    "id": "q05",
+    "kind": "exact",
+    "text": "field trip lunch water",
+    "relevant": [
+      "trip-food"
+    ]
+  },
+  {
+    "id": "q06",
+    "kind": "exact",
+    "text": "donated spare parts cables",
+    "relevant": [
+      "repair-donate"
+    ]
+  },
+  {
+    "id": "q07",
+    "kind": "paraphrase",
+    "text": "How can someone in a wheelchair get inside the workspace?",
+    "relevant": [
+      "studio-access"
+    ]
+  },
+  {
+    "id": "q08",
+    "kind": "paraphrase",
+    "text": "What should I wear or switch on so motorists can see me at night?",
+    "relevant": [
+      "bike-night"
+    ]
+  },
+  {
+    "id": "q09",
+    "kind": "paraphrase",
+    "text": "I spilled a drink on a novel I checked out. What now?",
+    "relevant": [
+      "library-damage"
+    ]
+  },
+  {
+    "id": "q10",
+    "kind": "paraphrase",
+    "text": "Will bad weather change where our outdoor excursion goes?",
+    "relevant": [
+      "trip-delay"
+    ]
+  },
+  {
+    "id": "q11",
+    "kind": "paraphrase",
+    "text": "Can somebody help stitch up my ripped shirt?",
+    "relevant": [
+      "repair-cloth"
+    ]
+  },
+  {
+    "id": "q12",
+    "kind": "paraphrase",
+    "text": "When should I give the plants a drink to avoid evaporation?",
+    "relevant": [
+      "garden-water"
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {"id":"n01","text":"How do I reset my password?","kind":"unrelated","relevant":[]},
+  {"id":"n02","text":"Who won the football match yesterday?","kind":"unrelated","relevant":[]},
+  {"id":"n03","text":"How do I calculate a matrix determinant?","kind":"unrelated","relevant":[]},
+  {"id":"n04","text":"What ingredients do I need for a chocolate cake?","kind":"unrelated","relevant":[]},
+  {"id":"n05","text":"What is the capital of Argentina?","kind":"unrelated","relevant":[]},
+  {"id":"n06","text":"How do I configure a wireless router?","kind":"unrelated","relevant":[]},
+  {"id":"n07","text":"What is the studio Wi-Fi password?","kind":"related-topic-missing-fact","relevant":[]},
+  {"id":"n08","text":"How much does a library membership cost?","kind":"related-topic-missing-fact","relevant":[]}
+]

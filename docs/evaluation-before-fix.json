@@ -1,0 +1,266 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "backend": "Sentence Transformers / PyTorch CPU float32",
+  "python": "3.14.6",
+  "platform": "Darwin",
+  "architecture": "arm64",
+  "versions": {
+    "sentence-transformers": "6.3.0",
+    "torch": "2.15.0",
+    "transformers": "5.23.0",
+    "numpy": "2.5.5"
+  },
+  "corpus_sha256": "0dee2e96b65ca5bf2f8bf02b483877304dede36cf73bdc21dec7e8d33ff9db8a",
+  "queries_sha256": "9544881e1dc3fba613ca28187d0a7761155f6bcec7657ad5e0dbbb283dde5815",
+  "passages": 18,
+  "groups": {
+    "exact": {
+      "queries": 6,
+      "semantic_recall": 1.0,
+      "keyword_recall": 1.0
+    },
+    "paraphrase": {
+      "queries": 6,
+      "semantic_recall": 1.0,
+      "keyword_recall": 0.5
+    },
+    "all": {
+      "queries": 12,
+      "semantic_recall": 1.0,
+      "keyword_recall": 0.75
+    }
+  },
+  "rows": [
+    {
+      "id": "q01",
+      "kind": "exact",
+      "text": "compost vegetable scraps",
+      "relevant": [
+        "garden-compost"
+      ],
+      "semantic": [
+        "garden-compost",
+        "garden-tools",
+        "repair-cloth"
+      ],
+      "keyword": [
+        "garden-compost",
+        "repair-cloth"
+      ],
+      "semantic_recall": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q02",
+      "kind": "exact",
+      "text": "quiet hours",
+      "relevant": [
+        "studio-quiet"
+      ],
+      "semantic": [
+        "studio-quiet",
+        "studio-booking",
+        "trip-meet"
+      ],
+      "keyword": [
+        "studio-quiet",
+        "studio-booking"
+      ],
+      "semantic_recall": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q03",
+      "kind": "exact",
+      "text": "flat tire inner tube",
+      "relevant": [
+        "bike-flat"
+      ],
+      "semantic": [
+        "bike-flat",
+        "bike-night",
+        "studio-access"
+      ],
+      "keyword": [
+        "bike-flat"
+      ],
+      "semantic_recall": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q04",
+      "kind": "exact",
+      "text": "borrow books fourteen days",
+      "relevant": [
+        "library-loan"
+      ],
+      "semantic": [
+        "library-loan",
+        "library-damage",
+        "library-events"
+      ],
+      "keyword": [
+        "library-loan"
+      ],
+      "semantic_recall": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q05",
+      "kind": "exact",
+      "text": "field trip lunch water",
+      "relevant": [
+        "trip-food"
+      ],
+      "semantic": [
+        "trip-food",
+        "trip-delay",
+        "garden-water"
+      ],
+      "keyword": [
+        "trip-food",
+        "garden-water"
+      ],
+      "semantic_recall": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q06",
+      "kind": "exact",
+      "text": "donated spare parts cables",
+      "relevant": [
+        "repair-donate"
+      ],
+      "semantic": [
+        "repair-donate",
+        "repair-cloth",
+        "repair-power"
+      ],
+      "keyword": [
+        "repair-donate"
+      ],
+      "semantic_recall": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q07",
+      "kind": "paraphrase",
+      "text": "How can someone in a wheelchair get inside the workspace?",
+      "relevant": [
+        "studio-access"
+      ],
+      "semantic": [
+        "studio-access",
+        "garden-tools",
+        "bike-night"
+      ],
+      "keyword": [
+        "library-events",
+        "repair-cloth",
+        "studio-access"
+      ],
+      "semantic_recall": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q08",
+      "kind": "paraphrase",
+      "text": "What should I wear or switch on so motorists can see me at night?",
+      "relevant": [
+        "bike-night"
+      ],
+      "semantic": [
+        "bike-night",
+        "studio-quiet",
+        "garden-water"
+      ],
+      "keyword": [
+        "studio-booking",
+        "trip-meet",
+        "bike-brakes"
+      ],
+      "semantic_recall": 1.0,
+      "keyword_recall": 0.0
+    },
+    {
+      "id": "q09",
+      "kind": "paraphrase",
+      "text": "I spilled a drink on a novel I checked out. What now?",
+      "relevant": [
+        "library-damage"
+      ],
+      "semantic": [
+        "library-damage",
+        "library-loan",
+        "trip-food"
+      ],
+      "keyword": [
+        "bike-brakes",
+        "bike-flat",
+        "library-damage"
+      ],
+      "semantic_recall": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q10",
+      "kind": "paraphrase",
+      "text": "Will bad weather change where our outdoor excursion goes?",
+      "relevant": [
+        "trip-delay"
+      ],
+      "semantic": [
+        "trip-delay",
+        "trip-food",
+        "garden-water"
+      ],
+      "keyword": [
+        "trip-delay",
+        "trip-meet"
+      ],
+      "semantic_recall": 1.0,
+      "keyword_recall": 1.0
+    },
+    {
+      "id": "q11",
+      "kind": "paraphrase",
+      "text": "Can somebody help stitch up my ripped shirt?",
+      "relevant": [
+        "repair-cloth"
+      ],
+      "semantic": [
+        "repair-cloth",
+        "repair-donate",
+        "garden-compost"
+      ],
+      "keyword": [
+        "studio-booking",
+        "bike-night",
+        "library-events"
+      ],
+      "semantic_recall": 1.0,
+      "keyword_recall": 0.0
+    },
+    {
+      "id": "q12",
+      "kind": "paraphrase",
+      "text": "When should I give the plants a drink to avoid evaporation?",
+      "relevant": [
+        "garden-water"
+      ],
+      "semantic": [
+        "garden-water",
+        "trip-food",
+        "trip-delay"
+      ],
+      "keyword": [
+        "library-loan",
+        "bike-brakes",
+        "bike-flat"
+      ],
+      "semantic_recall": 1.0,
+      "keyword_recall": 0.0
+    }
+  ]
+}

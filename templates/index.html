@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Find passages in your documents, even when you don't remember the exact words.">
+  <meta name="theme-color" content="#234b3e"><title>LocalLens — Semantic Document Search</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</head>
+<body>
+<a class="skip" href="#query">Skip to search</a>
+<header><a class="brand" href="#"><span class="logo" aria-hidden="true"></span>LocalLens</a><a class="header-link" href="#library">Your document library <span aria-hidden="true">↗</span></a></header>
+<main>
+  <section class="intro"><p class="eyebrow">SEMANTIC DOCUMENT SEARCH</p><h1>Find what you meant.<br><em>In words you already have.</em></h1><p class="lede">Search your notes, handbooks, and documents.<br>Start with the examples below, or add your own text.</p></section>
+  <section class="search-panel" aria-label="Document search">
+    <form id="search-form"><label for="query">What are you looking for?</label><div class="search-row"><input id="query" required maxlength="400" placeholder="e.g. Can somebody help mend my shirt?" value=""><button id="search-button" class="primary" type="submit">Search <span aria-hidden="true">→</span></button></div></form>
+    <div class="suggestions"><span>Try an example</span>{% for q in suggested %}<button type="button" class="suggestion" data-query="{{ q.text }}">{{ ['A step-free entrance', 'Fix a flat tire', 'Mend a ripped shirt'][loop.index0] }} <span aria-hidden="true">↗</span></button>{% endfor %}</div>
+    <div class="search-bottom"><a id="corpus-count" href="#library">6 documents enabled</a><span id="status-text" role="status" aria-live="polite">Ready to search</span><button id="cancel" class="text-button" type="button" hidden>Cancel</button><button id="retry" class="text-button" type="button" hidden>Try again</button></div>
+    <progress id="progress" aria-label="Loading search model" max="100" hidden></progress><p id="error" class="error" role="alert" hidden></p>
+    <noscript><p class="error">Enable JavaScript to use the search controls. Search itself runs in Python.</p></noscript>
+  </section>
+  <div class="workspace">
+    <aside class="library-panel" id="library" aria-labelledby="library-heading">
+      <div class="section-heading"><h2 id="library-heading" tabindex="-1">Library</h2><span id="library-count" class="count">6</span></div>
+      <p class="help">Only checked documents are searched.</p>
+      <div id="document-list"></div>
+      <div class="library-actions"><button type="button" id="restore" class="text-button">Restore sample documents</button><button type="button" id="clear" class="text-button" hidden>Clear imported data</button></div>
+      <p id="library-status" class="help" role="status" aria-live="polite"></p>
+      <details class="import-panel" id="import-panel"><summary>Add your own text <span aria-hidden="true">+</span></summary>
+        <p class="help">.txt or .md files. Up to 100 KB total. On a hosted site, your text is sent to its server.</p>
+        <form id="file-form"><label for="files">Choose files</label><input id="files" name="files" type="file" accept=".txt,.md,text/plain,text/markdown" multiple required><button class="import-button secondary" type="submit">Import files</button></form>
+        <form id="paste-form"><label for="document-title">Document name</label><input id="document-title" maxlength="160" placeholder="e.g. Team handbook"><label for="paste">Or paste text</label><textarea id="paste" rows="5" maxlength="20000" required placeholder="Paste up to 20,000 characters…"></textarea><button class="import-button secondary" type="submit">Add text</button></form>
+        <p id="import-status" class="help" role="status"></p>
+      </details>
+    </aside>
+    <section class="results-panel" aria-labelledby="results-heading"><div class="section-heading"><h2 id="results-heading">Search results</h2><span id="result-count" class="results-label">Original passages</span></div><p id="searched" class="searched" hidden></p>
+      <div id="semantic-results"><div class="empty"><span class="empty-lens" aria-hidden="true"></span><h3>Your next useful passage is in here.</h3><p>Try an example above, or add a document to get started.</p></div></div>
+      <details class="score-guide"><summary>How results are chosen</summary><p>We look for similar meaning and leave out weak matches. Results can still miss the mark—read the passage to check.</p></details>
+    </section>
+  </div>
+  <section class="about-panels" aria-label="About LocalLens">
+    <details id="privacy" class="about-panel"><summary>Your text. Clear boundaries.<span aria-hidden="true">+</span></summary><div>
+      <p>Running locally? Your text is processed on your computer. On a hosted site, it goes to that site's server.</p>
+      <p>The app doesn't save your documents to disk. Removing a document clears it from this tab; a search already running may still finish. Refreshing clears uploads and restores the examples.</p>
+      <p>The first model download needs internet. We don't send your text to Hugging Face. Hosts may keep their own network logs. Offline use hasn't been tested.</p>
+    </div></details>
+    <details class="about-panel benchmark"><summary>A small, honest benchmark<span aria-hidden="true">+</span></summary><div>
+      <p>We tested 12 questions against 18 original sample passages, plus eight questions the documents couldn't answer.</p>
+      <p>The full results—including mistakes and a keyword-search comparison—are in the README. This is a small test we wrote ourselves, not an independent benchmark.</p>
+    </div></details>
+  </section>
+</main>
+<footer><a class="brand" href="#"><span class="logo" aria-hidden="true"></span>LocalLens</a><span>Your documents. Easier to find.</span><a href="#query">Back to search ↑</a></footer>
+<script type="application/json" id="library-data">{{ samples|tojson }}</script>
+</body></html>

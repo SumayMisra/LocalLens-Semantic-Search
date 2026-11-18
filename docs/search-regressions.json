@@ -1,0 +1,30 @@
+{
+  "known_failure_regressions": [
+    {
+      "query": "Can somebody help stitch up my ripped shirt?",
+      "semantic": [
+        "Mending clothes"
+      ],
+      "keyword": []
+    },
+    {
+      "query": "How do I reset my password?",
+      "semantic": [],
+      "keyword": []
+    },
+    {
+      "query": "Who won the football match yesterday?",
+      "semantic": [],
+      "keyword": []
+    }
+  ],
+  "real_world_example": {
+    "query": "Can I work from home?",
+    "selected_scope": "imports",
+    "top_semantic_passage": "Remote working arrangements: Employees may perform their duties from home two days per week with manager approval.",
+    "sample_leakage": false
+  },
+  "scope_isolation": "passed for semantic and keyword",
+  "clear_state_request": "passed",
+  "served_by": "Gunicorn over localhost HTTP"
+}

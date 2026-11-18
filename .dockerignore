@@ -1,0 +1,12 @@
+*
+!requirements.txt
+!app.py
+!engine.py
+!search.py
+!gunicorn.conf.py
+!data/
+!data/**
+!templates/
+!templates/**
+!static/
+!static/**
